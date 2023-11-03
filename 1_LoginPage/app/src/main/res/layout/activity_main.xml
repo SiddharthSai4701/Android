@@ -53,7 +53,7 @@
     <Button
         android:layout_width="219dp"
         android:layout_height="51dp"
-        android:backgroundTint="@color/blue"
+        android:backgroundTint="#3489eb"
         android:text="Submit"
         android:textColor="@color/black"
         android:textStyle="bold"
