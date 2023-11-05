@@ -19,7 +19,7 @@ public class MainActivity2 extends AppCompatActivity {
 
 
         Toast.makeText(getApplicationContext(), "We are moved to second Activity",Toast.LENGTH_LONG).show();
-
+        back = findViewById(R.id.backButton);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
