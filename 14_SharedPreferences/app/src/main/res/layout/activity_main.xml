@@ -17,11 +17,26 @@
         android:text="Status" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/studentName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="25dp"
-        android:hint="Enter the data you want to store..."/>
+        android:hint="Enter your username"/>
+
+    <EditText
+        android:id="@+id/studentRegNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:hint="Enter your registration number" />
+
+    <EditText
+        android:id="@+id/studentDOB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:hint="Enter your date of birth"
+        android:inputType="date"/>
 
     <Button
         android:id="@+id/btn_write"

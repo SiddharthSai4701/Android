@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,20 +20,26 @@ public class MainActivity extends AppCompatActivity {
         TextView textView = findViewById(R.id.text_status);
         Button button_write = findViewById(R.id.btn_write);
         Button button_read = findViewById(R.id.btn_read);
-        EditText editText = findViewById(R.id.editText);
+        EditText editTextName = findViewById(R.id.studentName);
+        EditText editTextRNo = findViewById(R.id.studentRegNo);
+        EditText editTextDOB = findViewById(R.id.studentDOB);
 
-        String username_demo = editText.getText().toString();
-//        String email_demo = " test@email.com";
         button_write.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 SharedPreferences sharedPreferences = getSharedPreferences("SharedPref_Name", MODE_PRIVATE);
                 // Editor is used to write to the shared preference
+                String studentName = editTextName.getText().toString();
+                String regNo = editTextRNo.getText().toString();
+                String DOB = editTextDOB.getText().toString();
                 SharedPreferences.Editor editor = sharedPreferences.edit();
-                editor.putString("username", username_demo);
-//                editor.putString("email", email_demo);
+                editor.putString("username", studentName);
+                editor.putString("registration_no",regNo);
+                editor.putString("dob", DOB);
                 editor.apply();
-                textView.setText(" Writing Operation successful! ");
+
+                textView.setText("Data Written Successfully!");
+
             }
         });
 
@@ -40,11 +47,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 SharedPreferences sharedPreferences = getSharedPreferences("SharedPref_Name", MODE_PRIVATE);
-                String username, email;
+                String studentName, regNo, DOB;
                 // The string should be blank. If accessing an integer, we pass 0
-                username = sharedPreferences.getString("username", "");
-//                email = sharedPreferences.getString("email", "");
-                textView.setText("Username: " + editText.getText().toString() + "\n");
+                studentName = sharedPreferences.getString("username", "");
+                regNo = sharedPreferences.getString("registration_no","");
+                DOB = sharedPreferences.getString("dob", "");
+                textView.setText("Username: " + studentName + "\nRegistartion Number: " + regNo + "\nDate of birth: " + DOB);
             }
         });
     }
