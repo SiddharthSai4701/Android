@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/item1"
+        android:title="School of Business"
+        app:showAsAction="never">
+        <menu>
+            <item android:id="@+id/item1_1"
+                android:title="MBA"/>
+        </menu>
+    </item>
+
+    <item android:id="@+id/item2"
+        android:title="School of Chemical Sciences"
+        app:showAsAction="never">
+        <menu>
+            <item android:id="@+id/item2_1"
+                android:title="Chemistry"/>
+        </menu>
+    </item>
+
+    <item android:id="@+id/item3"
+        android:title="School of Humanities"
+        app:showAsAction="never">
+        <menu>
+            <item android:id="@+id/item3_1"
+                android:title="Lit"/>
+            <item android:id="@+id/item3_2"
+                android:title="Lang"/>
+        </menu>
+    </item>
+
+    <item android:id="@+id/item4"
+        android:title="School of Languages and Literatures">
+        <menu>
+            <item android:id="@+id/item4_1"
+                android:title="Sanskrit"/>
+        </menu>
+    </item>
+
+    <item android:id="@+id/item5"
+        android:title="School of Life Sciences">
+        <menu>
+            <item android:id="@+id/item5_1"
+                android:title="Sanskrit"/>
+        </menu>
+    </item>
+    <item android:id="@+id/item6"
+        android:title="School of Physical Sciences">
+        <menu>
+            <item android:id="@+id/item6_1"
+                android:title="Sanskrit"/>
+        </menu>
+    </item>
+    <item android:id="@+id/item7"
+        android:title="School of Social Work">
+        <menu>
+            <item android:id="@+id/item7_1"
+                android:title="Sanskrit"/>
+        </menu>
+    </item>
+    <item android:id="@+id/item8"
+        android:title="School of Communication and Media Studies">
+        <menu>
+            <item android:id="@+id/item8_1"
+                android:title="Sanskrit"/>
+        </menu>
+    </item>
+    <item android:id="@+id/item9"
+        android:title="School of Information Technology">
+        <menu>
+            <item android:id="@+id/item9_1"
+                android:title="Sanskrit"/>
+        </menu>
+    </item>
+</menu>
